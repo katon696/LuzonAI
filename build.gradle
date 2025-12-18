@@ -1,0 +1,24 @@
+plugins {
+    id 'application'
+}
+
+group = 'luzonai'
+version = '1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'luzonai.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.sun.net.httpserver:http:20070405'
+}
